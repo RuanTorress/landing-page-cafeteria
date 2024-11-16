@@ -1,0 +1,545 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@1,9..144,100&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+
+*{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+
+    
+}
+
+body{
+
+    height: 100vh;
+}
+
+.container , p{
+    font-family: lato;
+    font-weight: 600;
+    color: #666;
+    line-height: 40px;
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    box-sizing: border-box;
+    margin-bottom: 70px;
+    
+}
+
+.container , h1{
+    font-family: oswald;
+    color: #C4A47C;
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 35px;
+}
+
+#logo-top {
+    width: 50px; /* Tamanho inicial */
+    height: 50px; /* Garantir altura igual à largura */
+    position: absolute;
+    left: 15vw; /* Distância da borda esquerda */
+    top: 10px; /* Ajuste fino na posição vertical */
+    border-radius: 50%; /* Torna o elemento circular */
+    overflow: hidden; /* Garante que a imagem fique dentro do círculo */
+    background-color: #121211; /* Cor de fundo do círculo */
+    animation: heartbeat 1.5s infinite; /* Animação de pulsação */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Estilo para a imagem dentro do círculo */
+#logo-top img {
+    width: 80%; /* Ajusta a imagem ao círculo */
+    height: 80%;
+    object-fit: cover; /* Garante que a imagem se encaixe bem */
+}
+
+/* Animação de pulsação */
+@keyframes heartbeat {
+    0% {
+        transform: scale(1); /* Tamanho normal */
+    }
+    30% {
+        transform: scale(1.2); /* Leve aumento no tamanho */
+    }
+    50% {
+        transform: scale(1); /* Volta ao tamanho original */
+    }
+    70% {
+        transform: scale(1.2); /* Aumenta novamente */
+    }
+    100% {
+        transform: scale(1); /* Finaliza no tamanho normal */
+    }
+}
+
+/* Efeito ao passar o mouse */
+#logo-top:hover {
+    animation: heartbeat 0.8s infinite; /* Acelera a pulsação no hover */
+    filter: brightness(1.3); /* Realça o brilho */
+}
+
+
+
+.cmenu {
+    width: 100%;
+    top: 0;
+    background-color: #121211;
+    position: fixed;
+    height: 80px;
+    display: flex;
+    align-items: center; /* Alinha verticalmente os itens */
+    padding: 0 20px; /* Espaçamento interno nas laterais */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.6); /* Sombra para destaque */
+    z-index: 1000; /* Garante que o menu esteja acima de outros elementos */
+}
+
+menu{
+    
+    position: absolute;
+    bottom: 24px;
+    right:15vw;
+    
+}
+
+menu a {
+    padding: 8px 12px; /* Adiciona espaçamento interno ao link */
+    text-decoration: none;
+    color: #c4a47c;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.7); /* Sombra mais sutil */
+    font-family: 'Roboto', sans-serif; /* Fonte mais moderna e legível */
+    font-size: 16px;
+    transition: all 0.3s ease; /* Transição suave para interatividade */
+}
+
+menu a:hover {
+    color: #ffffff; /* Muda a cor ao passar o mouse */
+    background-color: #c4a47c; /* Adiciona fundo para destaque */
+    border-radius: 5px; /* Bordas arredondadas */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4); /* Leve sombra ao passar o mouse */
+}
+
+
+
+.img-1{
+
+    background-image: url(../image/parallax-imagem1.png);
+    height: 800px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+
+.pai{
+
+    width: 100%;
+    height: 800px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+
+.img-1 h1{
+
+
+font-family: Fraunces;
+font-size: 70px;
+color: #f4f0f0;
+
+
+
+
+}
+
+.container{
+
+    max-width:1100px;
+    margin: 0px auto;
+}
+
+.experimente{
+
+    width: 100%;
+    text-align: center;
+
+
+}
+
+
+
+
+
+.img-2{
+   
+   background-image: url(../image/parallax-imagem2.jpg); 
+   text-align: center; 
+   height: 400px;
+   background-position: center center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-attachment: fixed;
+
+}
+
+.pai2{
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;   
+    height:400px;
+
+}
+
+
+.img-2 h1 {
+    
+   
+    background-color: #6048291c;
+    color: white;
+    font-family:fraunces ;
+
+
+}
+
+
+.img-3{
+
+    background-image: url(../image/parallax-imagem3.jpg);
+    text-align: center; 
+    height: 400px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.img-3 h1{
+        
+   background-color: #6048292f;
+   color: white;
+   font-family:fraunces ;
+   font-size: 25px;
+   
+
+
+}
+
+.img-4{
+
+    background-image: url(../image/parallax-imagem4.png);
+    text-align: center; 
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 0px 0px 20px 0px;
+ 
+
+}
+
+
+.blocotitulo {
+
+    
+    padding-top: 10px;
+    padding-bottom: 30px;
+    display: block;
+
+}
+
+.blocotitulo h1 {
+
+    background-color: #6048293b;
+    display: inline-block;
+    padding: 10px;
+    border-radius: 10px;
+    color: rgba(255, 255, 255, 0.884);
+    text-shadow: 5px 5px 5px black;
+    /* margin-top: -60px; */
+    
+}
+
+
+.blocoendereco{
+
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 20px;
+}
+
+.endereco{
+
+    
+    background-color: #60482925;
+    display: block;
+    max-width: 550px;
+    margin: 30px auto;
+    padding: 20px;
+    
+   
+
+}
+
+
+
+.blocomapa{
+
+    max-width: 800px;
+    margin: 0px auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    box-sizing: border-box;
+    
+    
+}
+
+#mapa{
+
+    width: 100%;
+    
+}
+
+
+
+li{
+
+    list-style: none;
+    line-height: 35px;
+    color: rgba(255, 255, 255, 0.904);
+    font-size: 20px;
+    text-shadow: 5px 5px 5px black;
+}
+
+.img-5{
+
+    background-image: url(../image/cafeteria.jpg);
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 600px;
+}
+
+.img-5{
+
+    
+   
+    text-align: center;
+    position: relative;
+    
+    
+}
+
+.seta{
+
+    position: absolute;
+    bottom: 5px;
+    right: 10px;
+    background-color: #c4a47c00;
+    border-radius: 5px;
+   
+}
+
+#setacima{
+
+    border-radius:none;
+    width: 50px;
+    
+
+}
+
+.img-5 h1{
+
+    background-color: #60482900;
+    display: inline-block;
+    padding: 10px;
+
+    
+}
+
+.papai{
+
+    /* display: grid;
+    grid-template-columns: auto  auto; */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 10px;
+
+
+   
+    
+}
+
+
+
+
+
+footer{
+
+    background-color: black;
+
+}
+
+footer p {
+
+    margin: 0;
+    
+}
+
+span{
+
+    color: #4A4031;
+    font-weight: bold;
+}
+
+
+/* media query */
+
+
+
+@media (max-width:570px){
+
+    menu a {
+        text-align: center;
+        display: block;
+        padding:5px;
+        
+    } 
+
+    menu{
+
+        top: 8px;
+        right: 120px;
+        
+        
+    }
+
+    .cmenu{
+
+        height: 100px;
+    }
+
+    #logo-top{
+
+       top: 8px;
+    }
+
+}
+
+@media (max-width:460px){
+
+    menu a {
+
+        text-align: center;
+        display: block;
+        padding:3px;
+        padding-top: 8px;
+        
+        
+
+    }
+
+    menu{
+
+        top: 15px;
+        
+    }
+
+    .cmenu{
+        height: 120px;
+        
+        
+    }
+
+    
+
+}
+
+
+
+@media (max-width:390px){
+
+    #logo-top{
+
+        display:none;
+    }
+
+    menu{
+        left:100px;
+        text-align: center;
+        font-size: 14px;
+    }
+
+    menu a {
+        
+        padding-top: 15px;
+    }
+
+    .cmenu{
+        height: 150px;
+        
+        
+    }
+
+}
+
+@media (max-width:340px){
+
+    menu{
+        
+        
+        top: 12px;
+        left: 0px;
+        width: 100%;
+        
+        margin-right: 20px;
+
+    
+    }
+
+   
+  
+   
+
+}
+
+@media (max-width:388px){
+
+    .endereco li{
+
+        font-size: 17px;
+    }
+
+}
+
+@media (max-width:415px){
+
+    #idpai h1{
+
+        font-size: 50px ;
+    }
+}
+
+
+
+
+
+
+
